@@ -1,0 +1,102 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: lightgray;
+}
+
+.hc{
+    height:auto;
+}
+
+.menu_tipo_mobile {
+    width: 100%;
+    height: 100px;
+    background: dimgray;
+    border-radius: 10px;
+   
+    bottom: 11;
+    align-items: center;
+}
+
+.mobile-bottom-bar{
+    background-color: #105057 ;
+    border-width: 5px;
+    
+    width: 100%;
+    height: 100px;
+}
+
+
+.link-hover{
+    text-decoration: none;
+    list-style: none;
+    color:white;
+    font-weight: 400;
+}
+
+.link-hover:hover{
+    color:  #105057 ;
+}
+
+.link-hover .text {
+   
+    display: none;
+}
+
+.link-hover:hover .text {
+    display: block;
+    color:white;
+    
+}
+
+.link-hover:hover ion-icon {
+    display: block;
+    color:white;
+    transition: 0.5s;
+  
+    transform: translateY(-10px);
+}
+
+.indicador{
+  
+    top: 50px;
+     height: 190px;
+     width: 100px;
+     background: #FFFFFF;
+ }
+ 
+ .active ion-icon {
+  
+     transform: translateY(-10px);
+ }
+ 
+ .active .text {
+     display: block;
+     color:white;
+ 
+ }
+ 
+ 
+/* .bb{
+    max-height: 600px; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: auto;
+} */
+
+.error {
+    position: relative;
+    animation: shake .1s linear;
+    animation-iteration-count: 3;
+    border: 1px solid red;
+    outline: none;
+  }
+  
+  @keyframes shake {
+    0% {
+      left: -5px;
+    }
+    100% {
+      right: -5px;
+    }
+  }
