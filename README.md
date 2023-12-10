@@ -11,4 +11,4 @@ através do body( no caso do axios, o data);
 Próximas espanções: Identificação por API_KEY e validação auth;
 
 A versãodo php neste projeto é a 8;
-e para controle das dos acessos, foi utilizado .htacess. 
+e para controle dos acessos e rotas, foi utilizado .htacess. 
