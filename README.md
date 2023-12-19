@@ -8,7 +8,7 @@ A API comunica Usando JSON, e foi adicionado CORS no header. Cada rota  utiliza 
 O front, usa datatables, e comunica com a api usando a bibliotecha axios. Os dados para crud, são passados
 através do body( no caso do axios, o data);
 
-Próximas espanções: Identificação por API_KEY e validação auth;
+Próximas expansões: Identificação por API_KEY e validação auth;
 
 A versãodo php neste projeto é a 8;
 e para controle dos acessos e rotas, foi utilizado .htacess. 
