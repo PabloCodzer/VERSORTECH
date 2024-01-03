@@ -4,6 +4,9 @@ require 'controllers/GETContoller.php';
 require 'controllers/POSTController.php';
 require 'controllers/PATCHController.php';
 require 'controllers/DELETEController.php';
+require 'vendor/autoload.php';
+
+use Firebase\JWT\JWT;
 
 class Router 
 {
@@ -30,6 +33,14 @@ class Router
             case "DELETE":
                 new DELETEontroller($requestUri);
                 break;
+            
+            default:
+                $secretKey = 'me_contrata';
+                // Payload para o token JWT
+                $payload = ['user_id' => 69, 'username' => 'salam'];
+                // Gera um token JWT
+                $token = JWT::encode($payload, $secretKey, 'HS256');
+                echo json_encode($token);
         }
 
     }

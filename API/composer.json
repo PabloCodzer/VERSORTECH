@@ -1,0 +1,17 @@
+{
+    "name": "cozer/api",
+    "autoload": {
+        "psr-4": {
+            "Api\\": "index.php"
+        }
+    },
+    "authors": [
+        {
+            "name": "PabloCodzer",
+            "email": "pablo.cozer@gmail.com"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^6.10"
+    }
+}
